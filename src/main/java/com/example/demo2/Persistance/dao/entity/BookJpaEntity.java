@@ -2,10 +2,12 @@ package com.example.demo2.Persistance.dao.entity;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.ArrayList;
 
-public class BookJpaEntity {
+@Entity
+@Table(name = "books")
+public class BookJpaEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,7 +21,8 @@ public class BookJpaEntity {
 
 
 
-
+    public BookJpaEntity() {
+    }
     public BookJpaEntity( Long id, String isbn, String titleEs, java.math.BigDecimal basePrice, java.math.BigDecimal discountPercentage) {
         this.id = id;
         this.isbn = isbn;

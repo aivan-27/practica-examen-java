@@ -1,9 +1,7 @@
 package com.example.demo2.Persistance.mapper;
 
-import com.example.demo2.Domain.mapper.BookMapper;
 import com.example.demo2.Domain.repository.entity.BookEntity;
 import com.example.demo2.Persistance.dao.entity.BookJpaEntity;
-import com.example.demo2.Persistance.dao.jpa.BookJpaDao;
 
 public class mapperpersistance {
     private static mapperpersistance INSTANCE;
