@@ -1,6 +1,6 @@
-package com.example.demo2.Persistance.dao.jpa;
+package com.example.demo2.persistence.dao.jpa;
 
-import com.example.demo2.Persistance.dao.entity.BookJpaEntity;
+import com.example.demo2.persistence.dao.entity.BookJpaEntity;
 
 import java.util.Optional;
 

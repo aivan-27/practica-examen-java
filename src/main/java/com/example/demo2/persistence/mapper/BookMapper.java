@@ -1,17 +1,17 @@
-package com.example.demo2.Persistance.mapper;
+package com.example.demo2.persistence.mapper;
 
 import com.example.demo2.Domain.repository.entity.BookEntity;
-import com.example.demo2.Persistance.dao.entity.BookJpaEntity;
+import com.example.demo2.persistence.dao.entity.BookJpaEntity;
 
-public class mapperpersistance {
-    private static mapperpersistance INSTANCE;
+public class BookMapper {
+    private static BookMapper INSTANCE;
 
-    private mapperpersistance() {
+    private BookMapper() {
     }
 
-    public static mapperpersistance getInstance() {
+    public static BookMapper getInstance() {
         if (INSTANCE == null) {
-            INSTANCE = new mapperpersistance();
+            INSTANCE = new BookMapper();
         }
         return INSTANCE;
     }

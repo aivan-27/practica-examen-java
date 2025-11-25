@@ -1,4 +1,4 @@
-package com.example.demo2.Persistance.dao.jpa;
+package com.example.demo2.persistence.dao.jpa;
 
 import java.util.List;
 import java.util.Optional;

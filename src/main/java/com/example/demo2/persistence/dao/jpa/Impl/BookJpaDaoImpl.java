@@ -1,15 +1,16 @@
-package com.example.demo2.Persistance.dao.jpa.Impl;
+package com.example.demo2.persistence.dao.jpa.Impl;
 
 import com.example.demo2.Domain.exception.ResourceNotFoundException;
-import com.example.demo2.Persistance.dao.entity.BookJpaEntity;
-import com.example.demo2.Persistance.dao.jpa.BookJpaDao;
+import com.example.demo2.persistence.dao.entity.BookJpaEntity;
+import com.example.demo2.persistence.dao.jpa.BookJpaDao;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
+import jakarta.transaction.Transactional;
 
 import java.util.List;
 import java.util.Optional;
-
+@Transactional
 public class BookJpaDaoImpl implements BookJpaDao {
     @PersistenceContext
     private EntityManager entityManager;

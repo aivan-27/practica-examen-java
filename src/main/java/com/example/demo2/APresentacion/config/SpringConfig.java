@@ -3,14 +3,15 @@ package com.example.demo2.APresentacion.config;
 import com.example.demo2.Domain.repository.BookRepository;
 import com.example.demo2.Domain.service.BookService;
 import com.example.demo2.Domain.service.impl.BookServiceImpl;
-import com.example.demo2.Persistance.dao.jpa.BookJpaDao;
-import com.example.demo2.Persistance.dao.jpa.Impl.BookJpaDaoImpl;
-import com.example.demo2.Persistance.repository.BookRepositoryImpl;
+import com.example.demo2.persistence.dao.jpa.BookJpaDao;
+import com.example.demo2.persistence.dao.jpa.Impl.BookJpaDaoImpl;
+import com.example.demo2.persistence.repository.BookRepositoryImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.Profile;
 
 @Configuration
+@Profile("!test")
 public class SpringConfig {
 
     /************* BOOK *************/
